@@ -3,12 +3,12 @@ A Joint Chinese segmentation and POS tagger based on bidirectional GRU-CRF
 
 To reproduce the results reported in the paper:
 
-# Single
+## Single
 python tagger.py train -p ud1 -t train.txt -d dev.txt -wv -crf 1 -cp -rd -gru -m model_ud1 -emb Embeddings/glove.txt
 
 python tagger.py test -p ud1 -e test.txt -m gru_full_ud1 -emb Embeddings/glove.txt
 
-# Ensemble
+## Ensemble
 
 python tagger.py train -p ud1 -t train.txt -d dev.txt -wv -crf 1 -cp -rd -gru -m model_1 -emb Embeddings/glove.txt
 
