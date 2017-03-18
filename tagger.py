@@ -22,7 +22,7 @@ parser.add_argument('-m', '--model', default='trained_model', help='Name of the 
 parser.add_argument('-tg', '--tag_scheme', default='BIES', help='Tagging scheme')
 parser.add_argument('-crf', '--crf', default=1, type=int, help='Using CRF interface')
 
-parser.add_argument('-ng', '--ngram', default=1, type=int, help='Using ngrams')
+parser.add_argument('-ng', '--ngram', default=3, type=int, help='Using ngrams')
 
 parser.add_argument('-wv', '--word_vector', default=False, help='Whether using word vectors', action='store_true')
 parser.add_argument('-emb', '--embeddings', default=None, help='Path and name of pre-trained char embeddings')
@@ -50,7 +50,7 @@ parser.add_argument('-mp', '--max_pooling', default=2, type=int, help='Max pooli
 
 parser.add_argument('-iter', '--epochs', default=30, type=int, help='Numbers of epochs')
 parser.add_argument('-op', '--optimizer', default='adagrad', help='Optimizer')
-parser.add_argument('-lr', '--learning_rate', default=0.5, type=float, help='Initial learning rate')
+parser.add_argument('-lr', '--learning_rate', default=0.1, type=float, help='Initial learning rate')
 parser.add_argument('-ld', '--decay_rate', default=0.05, type=float, help='Learning rate decay')
 parser.add_argument('-mt', '--momentum', default=None, type=float, help='Momentum')
 
