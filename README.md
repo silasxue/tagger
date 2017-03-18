@@ -4,7 +4,7 @@ A Joint Chinese segmentation and POS tagger based on bidirectional GRU-CRF
 ## Requirements
 Python 2.7
 
-TensorFlow 0.11.0 (Newer version will be supported in the furture)
+TensorFlow 0.11.0 (Newer versions will be supported in the furture)
 
 Pygame (Convert Chinese characters into pictures)
 
