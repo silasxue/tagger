@@ -40,7 +40,7 @@ def get_vocab_tag(path, filelist, ngram=1):
     char_set = set()
     tag_set = {}
     raw = []
-    for file_name in filelist:
+    for i, file_name in enumerate(filelist):
         for line in codecs.open(path + '/' + file_name, 'rb', encoding='utf-8'):
             line = line.strip()
             raw_l = ''
@@ -57,7 +57,8 @@ def get_vocab_tag(path, filelist, ngram=1):
                                 tag_set[spos[1]] = len(spos[0])
                         else:
                             tag_set[spos[1]] = len(spos[0])
-                raw.append(raw_l)
+                if i == 0:
+                    raw.append(raw_l)
             elif len(line) == 0:
                 continue
             else:
