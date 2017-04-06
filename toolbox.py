@@ -752,8 +752,12 @@ def decode_tags(idx, index2tags, tag_scheme):
             sent = []
             for item in line:
                 tag = dic[item]
-                tag = tag.replace('E', 'I')
-                tag = tag.replace('S', 'B')
+                if '-' in tag:
+                    tag = tag.replace('E-', 'I-')
+                    tag = tag.replace('S-', 'B-')
+                else:
+                    tag = tag.replace('E', 'I')
+                    tag = tag.replace('S', 'B')
                 sent.append(tag)
             sents.append(sent)
         out.append(sents)
