@@ -826,7 +826,7 @@ def generate_output(chars, tags, tag_scheme):
 def evaluator(prediction, gold, tag_scheme='BIES', verbose=False):
     assert len(prediction) == len(gold)
 
-    scores = score(prediction[0], gold[0], verbose)
+    scores = score(gold[0], prediction[0], verbose)
     print 'Segmentation F-score: %f' % scores[0]
     if tag_scheme != 'seg':
         print 'Tagging F-score: %f' % scores[1]
