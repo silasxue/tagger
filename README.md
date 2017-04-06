@@ -11,6 +11,7 @@ Pygame (Convert Chinese characters into pictures)
 ## Reference
 
 Yan Shao, Christian Hardmeier, Jörg Tiedemann and Joakim Nivre. "Character-based Joint Segmentation and POS Tagging for Chinese using Bidirectional RNN-CRF" arXiv preprint arXiv: 1704.01314 (2017).
+
 https://arxiv.org/pdf/1704.01314.pdf
 
 ##
