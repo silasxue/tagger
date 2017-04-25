@@ -703,7 +703,7 @@ def get_input_vec_raw(path, fname, char2index, rad_dic=None):
     else:
         x_m = [[], []]
         keys = sorted(rad_dic.keys())
-        key_map['NULL'] = 0
+        key_map['<NULL>'] = 0
         idx = 1
         for k in keys:
             key_map[k] = idx
